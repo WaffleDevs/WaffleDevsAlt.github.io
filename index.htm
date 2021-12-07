@@ -1,37 +1,22 @@
 
 <!DOCTYPE HTML>
 <html>
-
   <head>
     <title>Waffles' App Dashboard</title>
-    <style>
-      body{
-        height: 100%;
-        background-color: black;
-      }
-      html{
-        background-color: black;
-      }
-      #script{
-        margin-top: -70px;
-      }
-      div{
-         position: 'absolute';
-         bottom:0;
-         left:0;
-      }
-      #mainsite {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  height: 30px;
-}
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <iframe width="99%" height="720" src="//jsfiddle.net/WaffleDevsAlt/z7nbrode/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0" id="script"></iframe>
+    <div style="background-color:#afa;" onclick="openWebsite('/tictactoe')"><p id="1">TicTacToe (v1)</p></div>
+    <div style="background-color:#afa;" onclick="openWebsite('/tictactoev2')"><p id="2">TicTacToe (v2)</p></div>
+    <div style="background-color:#afa;" onclick="openWebsite('/skriptGui')"><p id="3">Skript Gui Editor</p></div>
+    <div style="background-color:#afa;" onclick="openWebsite('/Connect-4')"><p id="4">Connect 4</p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="5"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="6"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="7"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="8"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="9"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="10"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="11"> </p></div>
+    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="12"> </p></div>
   </body>
-  <button id="mainsite" onclick="window.location.href = 'https://waffledevsalt.github.io'">Main Page</button>
 </html>
