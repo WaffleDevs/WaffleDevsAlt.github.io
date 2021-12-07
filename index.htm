@@ -4,7 +4,13 @@
   <head>
     <title>Waffles' App Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="index.js" defer></script>
+    <script type="text/javascript"defer>
+      function openWebsite(website) {
+        if (website != "") {
+          window.location.href = `https://waffledevsalt.github.io${website}`;
+        }
+      }
+    </script>
   <body>
     <div style="background-color:#afa;" onclick="openWebsite('/tictactoe')"><p id="1">TicTacToe (v1)</p></div>
     <div style="background-color:#afa;" onclick="openWebsite('/tictactoev2')"><p id="2">TicTacToe (v2)</p></div>
