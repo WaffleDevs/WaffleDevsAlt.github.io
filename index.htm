@@ -1,28 +1,114 @@
 
-<!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Waffles' App Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" defer>
-      function openWebsite(website) {
-        if (website != "") {
-          window.location.href = `${website}`;
-        }
-      }
-    </script>
+
   <body>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/tictactoe')"><p id="1">TicTacToe (v1)</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/Connect-4')"><p id="2">Connect 4</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/chess')"><p id="3">Chess</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Chess/sender.html')"><p id="4">Online Chess<br>Host</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Connect-4/sender.html')"><p id="5">Online Connect 4<br>Host</p></div>
-    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="6"> </p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/tictactoev2')"><p id="7">TicTacToe (v2)<br> Local</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/tictactoeV2OM')"><p id="8">TicTacToe (v2)<br> Online</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/minesweeper')"><p id="9">Minesweeper</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Chess/receiver.html')"><p id="10">Online Chess<br>Player</p></div>
-    <div style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Connect-4/receiverr.html')"><p id="11">Online Connect 4<br>Player</p></div>
-    <div style="background-color:#faa;" onclick="openWebsite('')"><p id="12"> </p></div>
+    <nav class='topnav'>
+      <a href="#games" class="topNavButton active" id="games">Games</a>
+      <a href="#links" class="topNavButton" id="links">Links</a>
+    </nav>
+    <script> 
+        $('#games').click(() => {
+$('.gamesManager').css("display", "table")
+  $('#games').addClass("active")
+  $('.linksManager').css("display", "none")
+  $('#links').removeClass("active")
+})
+
+$('#links').click(() => {
+$('.linksManager').css("display", "table")
+  $('#links').addClass("active")
+  $('.gamesManager').css("display", "none")
+  $('#games').removeClass("active")
+})
+
+function openWebsite(website) {
+  if (website != "") {
+    window.location.href = `${website}`;
+  }
+}
+</script>
+    <div class="gamesManager" id="gamesWrapper">
+      <div class="gamesManager" id="gamesDiv">
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/tictactoe')">
+          <p>TicTacToe (v1)</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/Connect-4')">
+          <p>Connect 4</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/chess')">
+          <p>Chess</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Chess/sender.html')">
+          <p>Online Chess<br>Host</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Connect-4/sender.html')">
+          <p>Online Connect 4<br>Host</p>
+        </div>
+        <div class="games" style="background-color:#faa;" onclick="openWebsite('')">
+          <p> </p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/tictactoev2')">
+          <p>TicTacToe (v2)<br> Local</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevsalt.github.io/tictactoeV2OM')">
+          <p>TicTacToe (v2)<br> Online</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/minesweeper')">
+          <p>Minesweeper</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Chess/receiver.html')">
+          <p>Online Chess<br>Player</p>
+        </div>
+        <div class="games" style="background-color:#afa;" onclick="openWebsite('https://waffledevs.github.io/Online-Connect-4/receiverr.html')">
+          <p>Online Connect 4<br>Player</p>
+        </div>
+        <div class="games" style="background-color:#faa;" onclick="openWebsite('')">
+          <p> </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="linksManager" id="linksWrapper">
+      <div class="linksManager" id="linksDiv">
+        <div class="links" style="background-color:#afa;" onclick="openWebsite('https://twitter.com/WaffleDevs')">
+          <p>Twitter</p>
+        </div>
+        <div class="links" style="background-color:#afa;" onclick="openWebsite('https://mod.io/u/waffledevs')">
+          <p>Mod.io</p>
+        </div>
+        <div class="links" style="background-color:#afa;" onclick="openWebsite('https://tiktok.com/WaffleDevs')">
+          <p>TikTok</p>
+        </div>
+        <div class="links" style="background-color:#afa;" onclick="openWebsite('https://discord.gg/ERb2ebXE3d')">
+          <p>Discord</p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+        <div class="links" style="background-color:#faa;" onclick="openWebsite('')">
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqiery/3.4.1/jquery.min.js
   </body>
+
 </html>
