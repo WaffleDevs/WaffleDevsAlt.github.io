@@ -1,4 +1,45 @@
+html {
+  background-color: black;
+}
+
 body {
+  background-color: black;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #666;
+  width: fill;
+}
+
+.topnav a {
+  float: left;
+  padding: 20px 20px;
+  font-size: 17px;
+  color: #ccc;
+  text-decoration: none;
+  background-color: #333;
+
+}
+
+.topnav a:hover {
+  background-color: #444;
+}
+
+.games {
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  float: left;
+  margin: 5px;
+  width: calc(100vw/6 - 15px);
+  height: calc(5vw / 2 + 60px);
+  padding: 0;
+  text-align: center;
+  font-size: calc(20px + (1vw - 2vh));
+}
+
+#gamesDiv {
   margin-top: 20px;
   width: calc(100vw - 30px);
   height: calc(10vw / 2 + 140px);
@@ -8,7 +49,13 @@ body {
   background-color: black;
 }
 
-div {
+#gamesWrapper {
+  margin: auto;
+  display: table;
+  background-color: black;
+}
+
+.links {
   border: 1px solid #f0f0f0;
   box-sizing: border-box;
   float: left;
@@ -17,11 +64,30 @@ div {
   height: calc(5vw / 2 + 60px);
   padding: 0;
   text-align: center;
-  font-size: calc(20px + (1vw - 1vh));
+  font-size: calc(20px + (1vw - 2vh));
 }
 
-html {
+#linksDiv {
+  margin-top: 20px;
+  width: calc(100vw - 30px);
+  height: calc(10vw / 2 + 140px);
+  border: solid 1px #fff;
+  position: center;
+  vertical-align: center;
+  background-color: black;
+}
+
+#linksWrapper {
   margin: auto;
   display: table;
   background-color: black;
+}
+
+.linksManager {
+  display: none;
+}
+
+.active {
+  background-color: #111 !important;
+  color: white !important;
 }
